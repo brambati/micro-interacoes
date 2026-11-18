@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Micro-interações · demo</title>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/hover.css" />
+    <link rel="stylesheet" href="css/loading.css" />
+    <link rel="stylesheet" href="css/feedback.css" />
+    <link rel="stylesheet" href="css/reduced-motion.css" />
+  </head>
+  <body>
+    <main>
+      <section>
+        <h2>Hover assimétrico + botão loading</h2>
+        <button class="btn" id="pedido">Enviar pedido</button>
+      </section>
+
+      <section>
+        <h2>Lift effect</h2>
+        <div class="card">Plano Pro · passe o mouse</div>
+      </section>
+
+      <section>
+        <h2>Underline animado</h2>
+        <a class="link" href="#">Ver todos os projetos</a>
+      </section>
+
+      <section>
+        <h2>Skeleton + shimmer</h2>
+        <div id="lista">
+          <div class="skeleton-row">
+            <div class="skeleton skeleton-avatar"></div>
+            <div><div class="skeleton skeleton-line" style="width: 80%"></div><div class="skeleton skeleton-line" style="width: 50%"></div></div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Like com bounce</h2>
+        <button class="like" id="like" aria-label="Curtir">♡</button>
+      </section>
+
+      <section>
+        <h2>Vibração no mobile (Android)</h2>
+        <button class="btn" id="add-to-cart">Adicionar ao carrinho</button>
+      </section>
+
+      <section>
+        <h2>Sucesso inline</h2>
+        <div class="field">
+          <input class="input" id="email" type="email" placeholder="seu@email.com" required />
+          <span class="check">✓</span>
+        </div>
+      </section>
+    </main>
+    <script src="js/feedback.js"></script>
+  </body>
+</html>
