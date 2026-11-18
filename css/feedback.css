@@ -1,0 +1,28 @@
+/* toda micro-interação tem 4 partes (Dan Saffer)
+   1. trigger  → o que dispara
+   2. rules    → o que acontece
+   3. feedback → o que o usuário vê
+   4. loop     → como muda com a repetição */
+
+/* feedback de erro: shake horizontal */
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-6px); }
+  40%, 80% { transform: translateX(6px); }
+}
+.input.is-invalid {
+  border-color: var(--danger);
+  animation: shake 0.3s ease;
+}
+
+.input.is-valid { border-color: var(--success); }
+.field { position: relative; }
+.field .check {
+  position: absolute; right: 12px; top: 50%; translate: 0 -50%;
+  color: var(--success); opacity: 0; transition: opacity 0.2s ease;
+}
+.input.is-valid + .check { opacity: 1; }
+
+/* like */
+.like { font-size: 32px; background: none; border: 0; cursor: pointer; color: var(--text); }
+.like.is-liked { color: var(--primary); }

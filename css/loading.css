@@ -1,0 +1,36 @@
+/* spinner: não sabe quanto demora (e pode ser < 1s)
+   skeleton: já sabe o layout do conteúdo */
+.skeleton {
+  border-radius: 8px;
+  background: var(--skeleton-base);
+}
+.skeleton-avatar { width: 56px; height: 56px; border-radius: 50%; }
+.skeleton-line   { height: 14px; margin-bottom: 10px; }
+
+/* shimmer */
+.skeleton {
+  background: linear-gradient(90deg,
+    var(--skeleton-base) 25%, var(--skeleton-shine) 50%, var(--skeleton-base) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.2s linear infinite;
+}
+@keyframes shimmer {
+  from { background-position: 200% 0; }
+  to   { background-position: -200% 0; }
+}
+
+/* botão loading */
+.btn.is-loading {
+  color: transparent;
+  pointer-events: none;
+  position: relative;
+}
+.btn.is-loading::after {
+  content: "";
+  position: absolute; inset: 0; margin: auto;
+  width: 18px; height: 18px;
+  border: 2px solid #fff; border-right-color: transparent;
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }

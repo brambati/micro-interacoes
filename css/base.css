@@ -1,0 +1,22 @@
+:root {
+  --primary: #db2777;
+  --primary-hover: #be185d;
+  --danger: #ef4444;
+  --success: #22c55e;
+  --text: #e5e7eb;
+  --bg: #0b0f1a;
+  --surface: #111827;
+  --skeleton-base: #1f2937;
+  --skeleton-shine: #374151;
+}
+body { margin: 0; font-family: system-ui, sans-serif; background: var(--bg); color: var(--text); }
+main { max-width: 760px; margin: 0 auto; padding: 32px 20px; display: grid; gap: 36px; }
+section { display: grid; gap: 14px; }
+h2 { margin: 0; font-size: 18px; color: #f9a8d4; }
+.btn { border: 0; color: #fff; font: 700 16px system-ui; padding: 12px 24px; border-radius: 10px; cursor: pointer; justify-self: start; }
+.card { background: var(--surface); border-radius: 14px; padding: 18px; max-width: 280px; }
+.link { color: var(--text); text-decoration: none; justify-self: start; }
+.input { width: 100%; box-sizing: border-box; padding: 12px 40px 12px 14px; border-radius: 10px; border: 2px solid #4b5563; background: #0f172a; color: var(--text); font-size: 16px; }
+.post { background: var(--surface); border-radius: 14px; padding: 16px; }
+.skeleton-row { display: flex; gap: 14px; background: var(--surface); padding: 16px; border-radius: 14px; }
+.skeleton-row > div:last-child { flex: 1; }
